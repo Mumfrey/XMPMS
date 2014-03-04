@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMPMS", "XMPMS\XMPMS.csproj", "{B9EE4942-B809-4559-9173-CB7C78229749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMPMS.Net", "XMPMS.Net\XMPMS.Net.csproj", "{8C0A5D74-15A6-4C00-A19D-59E80E6DAD92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevTools", "DevTools\DevTools.csproj", "{DEF35563-9C04-4522-ACC6-F2032568C00F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug - UT2003|Any CPU = Debug - UT2003|Any CPU
+		Debug - XMP|Any CPU = Debug - XMP|Any CPU
+		Release - UT2003|Any CPU = Release - UT2003|Any CPU
+		Release - XMP|Any CPU = Release - XMP|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9EE4942-B809-4559-9173-CB7C78229749}.Debug - UT2003|Any CPU.ActiveCfg = Debug - UT2003|Any CPU
+		{B9EE4942-B809-4559-9173-CB7C78229749}.Debug - UT2003|Any CPU.Build.0 = Debug - UT2003|Any CPU
+		{B9EE4942-B809-4559-9173-CB7C78229749}.Debug - XMP|Any CPU.ActiveCfg = Debug - XMP|Any CPU
+		{B9EE4942-B809-4559-9173-CB7C78229749}.Debug - XMP|Any CPU.Build.0 = Debug - XMP|Any CPU
+		{B9EE4942-B809-4559-9173-CB7C78229749}.Release - UT2003|Any CPU.ActiveCfg = Release - UT2003|Any CPU
+		{B9EE4942-B809-4559-9173-CB7C78229749}.Release - UT2003|Any CPU.Build.0 = Release - UT2003|Any CPU
+		{B9EE4942-B809-4559-9173-CB7C78229749}.Release - XMP|Any CPU.ActiveCfg = Release - XMP|Any CPU
+		{B9EE4942-B809-4559-9173-CB7C78229749}.Release - XMP|Any CPU.Build.0 = Release - XMP|Any CPU
+		{8C0A5D74-15A6-4C00-A19D-59E80E6DAD92}.Debug - UT2003|Any CPU.ActiveCfg = Debug - UT2003|Any CPU
+		{8C0A5D74-15A6-4C00-A19D-59E80E6DAD92}.Debug - UT2003|Any CPU.Build.0 = Debug - UT2003|Any CPU
+		{8C0A5D74-15A6-4C00-A19D-59E80E6DAD92}.Debug - XMP|Any CPU.ActiveCfg = Debug - XMP|Any CPU
+		{8C0A5D74-15A6-4C00-A19D-59E80E6DAD92}.Debug - XMP|Any CPU.Build.0 = Debug - XMP|Any CPU
+		{8C0A5D74-15A6-4C00-A19D-59E80E6DAD92}.Release - UT2003|Any CPU.ActiveCfg = Release - UT2003|Any CPU
+		{8C0A5D74-15A6-4C00-A19D-59E80E6DAD92}.Release - UT2003|Any CPU.Build.0 = Release - UT2003|Any CPU
+		{8C0A5D74-15A6-4C00-A19D-59E80E6DAD92}.Release - XMP|Any CPU.ActiveCfg = Release - XMP|Any CPU
+		{8C0A5D74-15A6-4C00-A19D-59E80E6DAD92}.Release - XMP|Any CPU.Build.0 = Release - XMP|Any CPU
+		{DEF35563-9C04-4522-ACC6-F2032568C00F}.Debug - UT2003|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF35563-9C04-4522-ACC6-F2032568C00F}.Debug - UT2003|Any CPU.Build.0 = Debug|Any CPU
+		{DEF35563-9C04-4522-ACC6-F2032568C00F}.Debug - XMP|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF35563-9C04-4522-ACC6-F2032568C00F}.Debug - XMP|Any CPU.Build.0 = Debug|Any CPU
+		{DEF35563-9C04-4522-ACC6-F2032568C00F}.Release - UT2003|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF35563-9C04-4522-ACC6-F2032568C00F}.Release - UT2003|Any CPU.Build.0 = Release|Any CPU
+		{DEF35563-9C04-4522-ACC6-F2032568C00F}.Release - XMP|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF35563-9C04-4522-ACC6-F2032568C00F}.Release - XMP|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

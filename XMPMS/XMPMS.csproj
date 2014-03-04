@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9EE4942-B809-4559-9173-CB7C78229749}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XMPMS</RootNamespace>
+    <AssemblyName>XMPMS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>xmpms.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug - XMP|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WCF XMP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release - XMP|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;WCF XMP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug - UT2003|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WCF UT2003</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release - UT2003|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;WCF UT2003</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compatibility\DotNetFramework2.0.cs" />
+    <Compile Include="Interfaces\ICDKeyValidator.cs" />
+    <Compile Include="Validation\CDKeyValidatorSingle.cs" />
+    <Compile Include="Util\ConsoleUtilities.cs" />
+    <Compile Include="Util\UScript\UMasterServerClient.cs" />
+    <Compile Include="Util\UScript\UMasterServerUplink.cs" />
+    <Compile Include="UserInterface\TextMode\ConsoleCommandLine.cs" />
+    <Compile Include="UserInterface\TextMode\ConsoleStatusDisplay.cs" />
+    <Compile Include="Interfaces\ICommandInterface.cs" />
+    <Compile Include="Interfaces\IStatusDisplay.cs" />
+    <Compile Include="Web\RequestHandlers\MapImageRequestHandler.cs" />
+    <Compile Include="Service\MasterServerService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\MasterServerService.Designer.cs">
+      <DependentUpon>MasterServerService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\ColourCodeParser.cs" />
+    <Compile Include="Interfaces\IServerList.cs" />
+    <Compile Include="Web\RequestHandlers\ServerRequestHandler.cs" />
+    <Compile Include="Util\GeoIP.cs" />
+    <Compile Include="Util\GeoIPEntry.cs" />
+    <Compile Include="Web\RequestHandlers\IndexRequestHandler.cs" />
+    <Compile Include="Web\RequestHandlers\SupportFileRequestHandler.cs" />
+    <Compile Include="Interfaces\IRequestHandler.cs" />
+    <Compile Include="Core\Player.cs" />
+    <Compile Include="Web\RequestHandlers\PageRequestHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\Server.cs" />
+    <Compile Include="Core\ServerList.cs" />
+    <Compile Include="Core\MasterServer.cs" />
+    <Compile Include="Web\WebServer.cs" />
+    <Compile Include="Validation\CDKeyValidatorBase.cs" />
+    <Compile Include="Validation\CDKeyValidatorXMP.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="GeoIP.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="MD5.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\MOTD.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>MOTD.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Modules.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Modules.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Stats.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Stats.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Core\MasterServer.CommandLine.cs">
+      <DependentUpon>MasterServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\ModuleManager.cs" />
+    <Compile Include="Core\ServerList.CommandLine.cs">
+      <DependentUpon>ServerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\ServerListEntry.cs" />
+    <Compile Include="GameStats\GameStatsLogFile.cs" />
+    <Compile Include="Interfaces\IConnectionLogWriter.cs" />
+    <Compile Include="Interfaces\IWebLogWriter.cs" />
+    <Compile Include="Interfaces\ICommandListener.cs" />
+    <Compile Include="LogWriter\LogWriterFile.cs" />
+    <Compile Include="GameStats\GameStatsLogNull.cs" />
+    <Compile Include="Interfaces\IGameStatsLog.cs" />
+    <Compile Include="Interfaces\IMasterServerModule.cs" />
+    <Compile Include="Net\Connections\CheckOptionReplyEventHandler.cs" />
+    <Compile Include="Net\Listeners\ReceivedHeartbeatHandler.cs" />
+    <Compile Include="Properties\MOTD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MOTD.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Net\Connections\ClientConnection.cs" />
+    <Compile Include="Net\Connections\Connection.cs" />
+    <Compile Include="Net\Connections\ServerConnection.cs" />
+    <Compile Include="Net\Listeners\HeartbeatListener.cs" />
+    <Compile Include="Net\Listeners\QueryListener.cs" />
+    <Compile Include="Net\Log\ConnectionLogWriterFile.cs" />
+    <Compile Include="Net\OperatingSystem.cs" />
+    <Compile Include="Net\Packets\Specialised\ServerInfoPacket.cs" />
+    <Compile Include="Net\WCF\RemoteMasterServer.cs" />
+    <Compile Include="Net\WCF\RPCCredentialValidator.cs" />
+    <Compile Include="Properties\Modules.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Modules.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service\MasterServerServiceProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\MasterServerServiceProjectInstaller.Designer.cs">
+      <DependentUpon>MasterServerServiceProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="UserInterface\GUI\frmStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\GUI\frmStatus.Designer.cs">
+      <DependentUpon>frmStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ILogWriter.cs" />
+    <Compile Include="Properties\Stats.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Stats.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\Telnet\TelnetCommandLine.cs" />
+    <Compile Include="UserInterface\Telnet\TelnetCommandReceivedEventHandler.cs" />
+    <Compile Include="UserInterface\Telnet\TelnetConnection.cs" />
+    <Compile Include="Util\IPBanManager.cs" />
+    <Compile Include="Util\MD5Entry.cs" />
+    <Compile Include="Util\MD5Manager.cs" />
+    <Compile Include="Validation\CDKeyValidatorMulti.cs" />
+    <Compile Include="Validation\CDKeyValidatorNull.cs" />
+    <Compile Include="Validation\CDKeyValidatorPassthrough.cs" />
+    <Compile Include="Validation\ValidationContext.cs" />
+    <Compile Include="Web\Log\WebLogWriterFile.cs" />
+    <Compile Include="Web\RequestHandlers\XmlRequestHandler.cs" />
+    <Compile Include="Web\SSIHandler.cs" />
+    <Compile Include="Web\WebServer.CommandLine.cs">
+      <DependentUpon>WebServer.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Service\MasterServerServiceProjectInstaller.resx">
+      <DependentUpon>MasterServerServiceProjectInstaller.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\GUI\frmStatus.resx">
+      <DependentUpon>frmStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Service\MasterServerService.resx">
+      <DependentUpon>MasterServerService.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BanList.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CDKeys.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xmpms.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XMPMS.Net\XMPMS.Net.csproj">
+      <Project>{8C0A5D74-15A6-4C00-A19D-59E80E6DAD92}</Project>
+      <Name>XMPMS.Net</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

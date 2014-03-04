@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="XMPMS.Properties" GeneratedClassName="Modules">
+  <Profiles />
+  <Settings>
+    <Setting Name="LoadAssemblies" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ICDKeyValidator" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CDKeyValidatorXMP</Value>
+    </Setting>
+    <Setting Name="ILogWriter" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LogWriterFile</Value>
+    </Setting>
+    <Setting Name="IGameStatsLog" Type="System.String" Scope="User">
+      <Value Profile="(Default)">GameStatsLogFile</Value>
+    </Setting>
+    <Setting Name="IWebLogWriter" Type="System.String" Scope="User">
+      <Value Profile="(Default)">WebLogWriterFile</Value>
+    </Setting>
+    <Setting Name="IConnectionLogWriter" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ConnectionLogWriterFile</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

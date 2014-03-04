@@ -1,0 +1,122 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="XMPMS.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SettingsUpgradeRequired" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ListenPorts" Type="System.Collections.Generic.List&lt;System.UInt16&gt;" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="WebServerListenPort" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">80</Value>
+    </Setting>
+    <Setting Name="WebServerListenAddresses" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;+&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="WebServerServerHeader" Type="System.String" Scope="User">
+      <Value Profile="(Default)">U2XMP Web-Based Master Server List</Value>
+    </Setting>
+    <Setting Name="WebServerSkinFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">u2xmp</Value>
+    </Setting>
+    <Setting Name="WebServerGameTypeFilter" Type="System.String" Scope="User">
+      <Value Profile="(Default)">*</Value>
+    </Setting>
+    <Setting Name="WebServerMapUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">maps/</Value>
+    </Setting>
+    <Setting Name="WebServerLogFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">logs\web</Value>
+    </Setting>
+    <Setting Name="WebRootFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">wwwroot</Value>
+    </Setting>
+    <Setting Name="LogFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">logs</Value>
+    </Setting>
+    <Setting Name="ConnectionLogFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">logs\net</Value>
+    </Setting>
+    <Setting Name="StatsFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Stats</Value>
+    </Setting>
+    <Setting Name="GlobalIgnoreGameTypeFilter" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="MatchID" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="MSListEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="MSListMaxServers" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="MSListServers" Type="System.String[]" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
+    </Setting>
+    <Setting Name="MSListPorts" Type="System.UInt16[]" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfUnsignedShort xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;unsignedShort&gt;27900&lt;/unsignedShort&gt;
+  &lt;unsignedShort&gt;27900&lt;/unsignedShort&gt;
+  &lt;unsignedShort&gt;27900&lt;/unsignedShort&gt;
+  &lt;unsignedShort&gt;27900&lt;/unsignedShort&gt;
+&lt;/ArrayOfUnsignedShort&gt;</Value>
+    </Setting>
+    <Setting Name="MSListInterfaces" Type="System.Collections.Generic.List&lt;System.UInt16&gt;" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TelnetPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10023</Value>
+    </Setting>
+    <Setting Name="TelnetPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">default</Value>
+    </Setting>
+    <Setting Name="SyncServiceEndpoint" Type="System.String" Scope="User">
+      <Value Profile="(Default)">rpc</Value>
+    </Setting>
+    <Setting Name="SyncServiceName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">link</Value>
+    </Setting>
+    <Setting Name="SyncServiceUris" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
+    </Setting>
+    <Setting Name="SyncServiceUsername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">default</Value>
+    </Setting>
+    <Setting Name="SyncServicePassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">default</Value>
+    </Setting>
+    <Setting Name="GeoIPDataFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">GeoIP.csv</Value>
+    </Setting>
+    <Setting Name="MD5DataFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MD5.csv</Value>
+    </Setting>
+    <Setting Name="BanListFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">BanList.txt</Value>
+    </Setting>
+    <Setting Name="CDKeyFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CDKeys.txt</Value>
+    </Setting>
+    <Setting Name="PassthroughValidatorHost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ut2003master1.epicgames.com</Value>
+    </Setting>
+    <Setting Name="PassthroughValidatorPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">28902</Value>
+    </Setting>
+    <Setting Name="ConsoleWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">80</Value>
+    </Setting>
+    <Setting Name="ConsoleHeight" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
